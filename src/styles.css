@@ -1,0 +1,168 @@
+/* src/styles.css */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial;
+  color: #111;
+}
+
+/* Notion-like page shell */
+.notion-app {
+  background: #f7f7f5;
+  min-height: 100vh;
+  padding: 32px 0;
+}
+.notion-page {
+  background: #ffffff;
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 28px 46px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+.notion-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 6px 0 12px;
+}
+
+.editor-shell {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* EditorJS specific styling */
+.editorjs-container {
+  width: 100%;
+  min-height: 400px;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #111;
+}
+
+/* EditorJS inline toolbar styling */
+.editorjs-container .ce-inline-toolbar {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Container */
+.editorjs-shell {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 360px;
+  background: #fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #111;
+}
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.toolbar button {
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Slash menu */
+.slash-pop {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px;
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.slash-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.slash-list {
+  display: grid;
+  gap: 6px;
+  max-height: 220px;
+  overflow: auto;
+}
+.slash-item {
+  text-align: left;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  cursor: pointer;
+}
+.slash-item:hover {
+  background: #f9fafb;
+}
+.slash-empty {
+  color: #999;
+  font-size: 12px;
+  padding: 4px;
+}
+
+/* File card */
+.file-block {
+  margin: 10px 0;
+}
+.file-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+.file-icon {
+  font-size: 22px;
+}
+.file-meta {
+  flex: 1;
+  min-width: 0;
+}
+.file-title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-size {
+  font-size: 12px;
+  color: #888;
+}
+.file-actions {
+  display: flex;
+  gap: 8px;
+}
+.file-actions button {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+/* ghost suggestion */
+.ai-ghost {
+  color: rgba(0, 0, 0, 0.35);
+  font-style: italic;
+}
